@@ -1,0 +1,98 @@
+.demo {
+    height: 828px;
+    background-image: url("../../../../public/image/Background-demo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.demo__content-title {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.demo__content-title h3 {
+    font-size: 38px;
+}
+
+.demo__content-title p {
+    font-size: 18px;
+    color: var(--primary-color);
+    opacity: 60%;
+    line-height: 26px;
+}
+
+.demo__content-title .btn--demo {
+    background-color: var(--primary-color);
+    border-radius: 100px;
+    color: var(--white);
+    padding: 5px 35px;
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+}
+
+.demo__content-title-item {
+    display: flex;
+    column-gap: 30px;
+}
+
+.demo__content-title-item h4 {
+    font-size: 16px;
+    margin-bottom: 0.6rem;
+}
+
+.demo__content-title-item p {
+    font-size: 14px;
+    color: var(--primary-color);
+    opacity: 60%;
+    line-height: 24px;
+}
+
+.demo__content-image {
+    flex: 1;
+    background-image: url("../../../../public/image/hero-demo.svg");
+    width: 100%;
+    min-height: 672px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 
+    Demo Content
+*/
+
+@media screen and (max-width: 1100px) {
+    .demo {
+        height: auto;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .demo__content-image {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .demo__content-image {
+        min-height: 500px;
+    }
+
+    .demo__content-title-item {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .demo__content-title .btn--demo {
+        justify-content: center;
+        align-self: flex-start;
+        width: 170px;
+    }
+}

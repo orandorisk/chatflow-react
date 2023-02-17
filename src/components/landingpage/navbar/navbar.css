@@ -1,0 +1,40 @@
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 2rem 40px;
+    }
+}
+
+.navbar {    
+    top: 0;
+    z-index: 10;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: var(--white);
+    font-weight: 500;
+    font-family: var(--font-family-secondary);
+}
+
+.navbar .active {
+    font-weight: 700;
+}
+
+.navbar__navigation {
+    flex: 1;
+}
+
+.navbar__buttons .btn--secondary {
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+
+    
